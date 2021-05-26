@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
-%                           Version 1.0.0                          %
+%                           Version 2.0.0.0                        %
 %        Copyright (c) Biomedical Informatics Research Laboratory, %
 %          Lahore University of Management Sciences Lahore (LUMS), %
 %                           Pakistan.                              %
 %                (http://biolabs.lums.edu.pk/BIRL)                 %
 %                    (safee.ullah@gmail.com)                       %
-%                 Last Modified on: 19-January-2019                %
+%                 Last Modified on: 15-April-2021                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function varargout = insilico(varargin)
@@ -33,7 +33,7 @@ function varargout = insilico(varargin)
 
 % Edit the above text to modify the response to help insilico
 
-% Last Modified by GUIDE v2.5 09-Jan-2019 12:24:47
+% Last Modified by GUIDE v2.5 26-May-2021 11:21:57
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;

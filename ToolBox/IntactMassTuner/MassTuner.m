@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
-%                           Version 1.0.0                          %
+%                           Version 2.0.0.0                        %
 %        Copyright (c) Biomedical Informatics Research Laboratory, %
 %          Lahore University of Management Sciences Lahore (LUMS), %
 %                           Pakistan.                              %
 %                (http://biolabs.lums.edu.pk/BIRL)                 %
 %                    (safee.ullah@gmail.com)                       %
-%                 Last Modified on: 19-January-2019                %
+%                 Last Modified on: 15-April-2021                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [Tuned_MolWt, Fragments_SumofMolWt,Fragments_MaxIntensity ,Histc_Unique_Fragments_MolWt,Unique_Fragments_Occurrences] =  MassTuner(SliderValue,Intact_Protein_Mass,MW_Tolerance)

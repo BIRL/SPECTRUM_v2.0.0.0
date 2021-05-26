@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
-%                           Version 1.0.0                          %
+%                           Version 2.0.0.0                        %
 %        Copyright (c) Biomedical Informatics Research Laboratory, %
 %          Lahore University of Management Sciences Lahore (LUMS), %
 %                           Pakistan.                              %
 %                (http://biolabs.lums.edu.pk/BIRL)                 %
 %                    (safee.ullah@gmail.com)                       %
-%                 Last Modified on: 19-January-2019                %
+%                 Last Modified on: 15-April-2021                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [Candidate_ProteinsList_Modified] = BlindPTM(Candidate_ProteinsList, PepTol, User_Hop_Threshold,PepUnit,sizeHopeInfo,Hop_Info_name, Hop_Info_AA, Hop_Info_end, Hop_Info_start)
 Candidate_ProteinsList_Modified = cell(numel(Candidate_ProteinsList),1);

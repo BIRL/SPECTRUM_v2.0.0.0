@@ -1,14 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
-%                           Version 1.0.0                          %
+%                           Version 2.0.0.0                        %
 %        Copyright (c) Biomedical Informatics Research Laboratory, %
 %          Lahore University of Management Sciences Lahore (LUMS), %
 %                           Pakistan.                              %
 %                (http://biolabs.lums.edu.pk/BIRL)                 %
 %                    (safee.ullah@gmail.com)                       %
-%                 Last Modified on: 19-January-2019                %
+%                 Last Modified on: 15-April-2021                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 function [Candidate_ProteinsList] = Score_Mol_Weight(Candidate_ProteinsList,Prot_Intact_MW)
 for index = 1:length(Candidate_ProteinsList)
     mass = Candidate_ProteinsList{index}.MolW;    
