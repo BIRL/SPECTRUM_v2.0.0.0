@@ -6,7 +6,7 @@
 %                           Pakistan.                              %
 %                (http://biolabs.lums.edu.pk/BIRL)                 %
 %                    (safee.ullah@gmail.com)                       %
-%                 Last Modified on: 15-April-2021                  %
+%                 Last Modified on: 03-June-2021                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function varargout = SPECTRUM(varargin)
 % SPECTRUM MATLAB code for SPECTRUM.fig
@@ -1143,6 +1143,20 @@ setappdata(0,'Debug',Debug); % debugger mod is on
 %% Check if the current directory is the app-root directory
 tool=strsplit(initial_path,f);
 if(strcmp('ToolBox',tool(length(tool))))
+    
+    %Added Below 20210603
+    v = ver;
+    matlab_version = version;
+    versionAsInt = str2double(matlab_version(end-5:end-2));
+    if (versionAsInt < 2017)
+        msgbox('Your MATLAB version is not suitable to run SPECTRUM. Kindly update to R2017a or above to run SPECTRUM successfully.');
+        return
+    end
+    if (~any(strcmp(cellstr(char(v.Name)), 'Bioinformatics Toolbox')))
+        msgbox('You are missing Bioinformatics toolbox add-on in your MATLAB. Kindly install the toolbox to run SPECTRUM successfully.');
+        return
+    end
+    %Added Above 20210603
     if((~isempty(get(handles.edit_ProjectTitle,'String')) && (~strcmp(get(handles.edit_ProjectTitle,'String'),'Enter the Project Title'))))
         
         Database_Path = getappdata(0,'Database_Path'); % Database path of single and batch search modes
