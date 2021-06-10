@@ -1,3 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
+%                           Version 2.0.0.0                        %
+%        Copyright (c) Biomedical Informatics Research Laboratory, %
+%          Lahore University of Management Sciences Lahore (LUMS), %
+%                           Pakistan.                              %
+%                (http://biolabs.lums.edu.pk/BIRL)                 %
+%                    (safee.ullah@gmail.com)                       %
+%                 Last Modified on: 10-June-2021                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function Final_Ladder_raw = MultipleTags(Ladder_raw, User_max_TagLength_Threshold,User_Taglength_min_threshold,User_Hop_Threshold,User_tagError_threshold, HopInfo)
 index =size(Ladder_raw,1)+1;
 LoopRun  = true;
@@ -29,6 +39,7 @@ while LoopRun
     end
 end
 index = 1;
+Final_Ladder_raw = {}; %Updated 20210610 %Bug Fix
 for iter = 1: size(Ladder_raw,1)
     if (User_Taglength_min_threshold <= size(Ladder_raw{iter,1},1))
         Final_Ladder_raw{index, 1}  = Ladder_raw{iter, 1};
