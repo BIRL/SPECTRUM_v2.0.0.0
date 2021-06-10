@@ -1,3 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           SPECTRUM: A MATLAB Toolbox for Top-down Proteomics     %
+%                           Version 2.0.0.0                        %
+%        Copyright (c) Biomedical Informatics Research Laboratory, %
+%          Lahore University of Management Sciences Lahore (LUMS), %
+%                           Pakistan.                              %
+%                (http://biolabs.lums.edu.pk/BIRL)                 %
+%                    (safee.ullah@gmail.com)                       %
+%                 Last Modified on: 15-April-2021                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function  Tag_Ladder = FindUniquePstAgain( Temp_Ladder, User_tagError_threshold )
 
 Size = size(Temp_Ladder,2);
